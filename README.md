@@ -1,55 +1,48 @@
-Audio Signal Acquisition, Sampling, Reconstruction and Fourier Analysis
-Department of Electronics and Communication Engineering
-Tezpur University | Autumn 2026
-About the Project
+
+# Audio Signal Acquisition, Sampling, Reconstruction and Fourier Analysis
+
+**Department of Electronics and Communication Engineering**  
+**Tezpur University | Autumn 2026**
+
+## About the Project
+
 This project implements a Python-based Digital Signal Processing (DSP) system for acquiring, analysing, resampling and reconstructing human voice signals.
+
 It demonstrates fundamental concepts of Signals and Systems through practical audio processing.
-Objectives
 
-Audio signal acquisition using a microphone.
-Time-domain signal analysis.
-Sampling and resampling at different frequencies.
-Signal reconstruction using interpolation.
-Demonstration of aliasing and the Nyquist theorem.
-Fourier Transform (FFT) analysis.
-Frequency resolution analysis.
-Comparison of different voice recordings.
+## Objectives
 
-Technologies Used
+- Audio signal acquisition using a microphone.
+- Time-domain signal analysis.
+- Sampling and resampling at different frequencies.
+- Signal reconstruction using interpolation.
+- Demonstration of aliasing and the Nyquist theorem.
+- Fourier Transform (FFT) analysis.
+- Frequency resolution analysis.
+- Comparison of different voice recordings.
 
-Python
-NumPy
-SciPy
-Matplotlib
-SoundDevice
+## Technologies Used
 
-Sampling Frequencies
+- Python
+- NumPy
+- SciPy
+- Matplotlib
+- SoundDevice
 
+## Sampling Frequencies
 
+| Sampling Frequency | Application |
+|---|---|
+| 8 kHz | Downsampled audio |
+| 16 kHz | Downsampled audio |
+| 44.1 kHz | Reference audio |
 
-Sampling frequency
-Application
+## Project Structure
 
-
-
-
-8 kHz
-Downsampled audio
-
-
-16 kHz
-Downsampled audio
-
-
-44.1 kHz
-Reference audio
-
-
-
-Project Structure
+```text
 Audio-DSP-Signals-Systems/
 │
-├── audio_dsp_assignment_improved.py
+├── main.py
 ├── README.md
 ├── .gitignore
 │
@@ -61,27 +54,45 @@ Audio-DSP-Signals-Systems/
     ├── part_c_fourier_spectra.png
     ├── part_c4_frequency_resolution.png
     └── part_c5_voice_frequency_comparison.png
+```
 
-Installation
+## Installation
+
 Install the required libraries:
-pip install numpy scipy matplotlib sounddevice
 
-How to Run
+```bash
+python -m pip install numpy scipy matplotlib sounddevice
+```
+
+## How to Run
+
+1. Clone or download this repository.
+2. Open the project folder in VS Code.
+3. Open the integrated terminal.
+4. Run:
+
+```bash
 python main.py
+```
 
-The program records three voice samples and performs time-domain analysis, resampling, reconstruction, aliasing demonstration and Fourier analysis.
-Generated graphs and numerical results are saved in the audio_dsp_outputs directory.
-Expected Outputs
+5. Follow the instructions to record three voice samples.
 
-Time-domain waveform
-Original vs reconstructed waveform
-Windowed-sinc reconstruction
-Aliasing demonstration
-FFT magnitude and phase spectra
-Frequency resolution comparison
-Voice frequency comparison
+## Expected Outputs
 
-Academic Context
+- Time-domain waveform.
+- Original vs reconstructed waveform.
+- Windowed-sinc reconstruction.
+- Aliasing demonstration.
+- FFT magnitude and phase spectra.
+- Frequency resolution comparison.
+- Voice frequency comparison.
+
+Generated graphs and numerical results are saved in the `audio_dsp_outputs` folder.
+
+## Academic Context
+
 This project was developed as part of the Signals and Systems assignment at Tezpur University, Department of Electronics and Communication Engineering.
-Author: [MOHD SHAJEB ANSARI]
-Branch: Electronics and Communication Engineering (ECE)
+
+**Author:** MOHD SHAJEB ANSARI
+
+**Branch:** Electronics and Communication Engineering (ECE)
